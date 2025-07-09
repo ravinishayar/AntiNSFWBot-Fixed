@@ -1,0 +1,6 @@
+pyrogram
+tgcrypto
+pymongo
+uvloop
+httpx
+python-dotenv

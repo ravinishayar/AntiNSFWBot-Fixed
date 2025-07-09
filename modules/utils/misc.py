@@ -1,0 +1,12 @@
+def getFileId(message):
+    if message.photo:
+        return message.photo[-1].file_id
+    elif message.document:
+        return message.document.file_id
+    elif message.sticker:
+        return message.sticker.file_id
+    elif message.animation:
+        return message.animation.file_id
+    elif message.video:
+        return message.video.file_id
+    return None
